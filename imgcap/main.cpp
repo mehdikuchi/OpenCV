@@ -18,6 +18,7 @@ int main() {
 	auto height = Image.rows;
 	while (true){		
 		cv::namedWindow("image");
+		cv::circle(Image, cv::Point2d(width / 2, height / 2), 40, cv::Scalar(128));
 		cv::imshow("image", Image);
 		cap.read(Image);
 		char key = (char) cv::waitKey(10);
