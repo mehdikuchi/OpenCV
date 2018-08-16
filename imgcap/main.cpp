@@ -12,7 +12,7 @@ int main() {
 	cv::Mat Image;	
 	cv::VideoCapture cap = cv::VideoCapture(0);
 	if (!cap.read(Image)) {
-		cout << "couldn't connect to the cam" << endl;
+		cout << "Couldn't connect to the camera. Please check the connection to the camera and that it is properly installed" << endl;
 	}
 	auto width = Image.cols;
 	auto height = Image.rows;
